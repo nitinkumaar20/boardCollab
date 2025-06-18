@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* layout.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1c274c;
+  color: #fff;
+  transition: width 0.3s;
+}
+
+.sidebar p {
+  padding: 10px 40px;
+  cursor: pointer;
+
+}
+.sidebar p:hover {
+  background-color: #2c3e50;
+  /* padding-left: 10px; */
+}
+.sidebar-collapsed {
+  width: 60px;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+
+.create-board-container {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.create-board-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #2563eb;
+}
+
+.message {
+  margin-top: 10px;
+  color: #10b981;
+}
+
+
+.board-list-container {
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+  font-family: sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+
+.board-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.board-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #eff6ff;
+  border: 1px solid #60a5fa;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
