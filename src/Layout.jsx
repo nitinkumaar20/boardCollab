@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import "./layout.css"; // External CSS file
 import Board from "./components/Board";
 import AddBoard from "./components/Addboard";
+import Task from "./components/Task";
 const Layout = () => {
   const [leftOpen, setLeftOpen] = useState(false);
   const [component, setComponent] = useState('');
@@ -10,7 +10,7 @@ const renderComponents = () => {
     <>
       {component === 'board' && <Board />}
       {component === 'addBoard' && <AddBoard />}
-      {component === 'tasks' && <Tasks />}
+      {component === 'tasks' && <Task />}
     </>
   );
 };
